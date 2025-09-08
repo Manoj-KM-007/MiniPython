@@ -7,6 +7,7 @@
 import math
 import author
 
+# arithemtic expressions
 radius = 2
 area  =  radius * radius * pi 
 
@@ -16,3 +17,20 @@ printc("Program Written By: ")
 print(author)
 
 print()
+
+# logical expressions with booleans
+a = True or False
+b = not a and (True and False)
+printc("Boolean Expresion Solution: ")
+print(b)
+
+# string expression with concatenation (* not supported,yet)
+s1=  "This is"
+s2 = " a simple python"
+s3 = " interpreter !"
+
+stringExpression = s1 + (s2 + s3)
+print(stringExpression)
+
+
+
