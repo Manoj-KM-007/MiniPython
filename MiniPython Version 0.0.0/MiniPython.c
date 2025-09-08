@@ -666,9 +666,9 @@ void interpretFile(char* filename){
         printf("Python Error : File Not Found For Interpretation \n");
         exit(1);
     }
-    char line[100];
+    char line[512];
 
-    while(fgets(line,100,fp) != NULL){
+    while(fgets(line,512,fp) != NULL){
         line[strcspn(line, "\r\n")] = 0; 
         if(isHashFirstInLine(line) || strlen(line) == 0){
             continue;
@@ -709,4 +709,5 @@ int main(int argCount,char* args[]){
 
    freeGC();
    return 0;
+
 }
